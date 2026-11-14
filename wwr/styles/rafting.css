@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 
-header, footer, .hero {
+header, .grid, footer {
     max-width: 840px;
     margin: 0 auto;
 }
@@ -26,6 +26,7 @@ header img {
 nav {
     display: flex;
     gap: 1.5rem;
+    align-items: center;
 }
 
 nav a {
@@ -33,54 +34,34 @@ nav a {
     color: #b71c1c;
     font-weight: bold;
     font-size: 1.1rem;
+    display: block;
+    padding: 0.5rem;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-.hero {
-    position: relative;
-    background-color: #fff;
-    padding-bottom: 2rem;
+h1 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    text-align: center;
-    width: 80%;
-    font-size: 1.8rem;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1rem;
-    width: 80%;
-    display: flex;
+.grid {
+    display: grid;
     align-items: center;
-    gap: 1rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.hero article img {
-    width: 150px;
-    height: auto;
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 footer {
@@ -102,3 +83,11 @@ footer {
     width: 30px;
     height: 30px;
 }
+
+
+
+
+
+
+
+
