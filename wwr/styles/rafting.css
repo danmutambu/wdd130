@@ -24,10 +24,12 @@ header, main, footer {
   margin: 0 auto;
 }
 
+/* HEADER WITH GRID AS REQUIRED BY RUBRIC */
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
+  justify-content: space-between;
   padding: 1rem;
   background-color: #f4f8fb;
 }
@@ -41,6 +43,7 @@ nav {
   display: flex;
   gap: 1.5rem;
   align-items: center;
+  justify-content: flex-end;
 }
 
 nav a {
@@ -169,9 +172,12 @@ footer {
 .social-links {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
+/* FIX SOCIAL ICONS SIZE */
 .social-links img {
   width: 30px;
   height: 30px;
+  object-fit: contain;
 }
