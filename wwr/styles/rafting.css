@@ -1,7 +1,6 @@
 :root {
   --primary-color: #0d47a1;
   --secondary-color: #b71c1c;
-  --accent1-color: #efff55;
   --accent2-color: #333333;
   --heading-font: 'Georgia', serif;
   --paragraph-font: 'Arial', sans-serif;
@@ -19,7 +18,9 @@ body {
   line-height: 1.6;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   max-width: 840px;
   margin: 0 auto;
 }
@@ -124,6 +125,15 @@ nav a:hover {
   margin-bottom: 0.5rem;
 }
 
+.history img {
+  float: right;
+  width: 150px;
+  height: auto;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+
 .adventures {
   margin: 2rem 1rem;
   text-align: center;
@@ -169,14 +179,14 @@ footer {
   align-items: center;
 }
 
-.social-links {
+.socialmedia {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
 /* FIX SOCIAL ICONS SIZE */
-.social-links img {
+.socialmedia img {
   width: 30px;
   height: 30px;
   object-fit: contain;
